@@ -56825,7 +56825,7 @@ userBot.callbackQuery("show_key", async (ctx) => {
     return;
   }
   await ctx.answerCallbackQuery();
-  const subLink = "https://vpn2-bot-q6bz.onrender.com/sub/" + userId;
+  const subLink = "https://vpn2-bot-tcg2.onrender.com/sub/" + userId;
   await ctx.reply(
     `\u{1F511} <b>\u0412\u0430\u0448\u0430 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0430</b>
 
@@ -56844,7 +56844,7 @@ async function getUserKey(userId) {
 }
 userBot.callbackQuery("connect_android", async (ctx) => {
   const userId = String(ctx.from.id);
-  const subLink = "https://vpn2-bot-q6bz.onrender.com/sub/" + userId;
+  const subLink = "https://vpn2-bot-tcg2.onrender.com/sub/" + userId;
   const happUrl = "happ://add/" + encodeURIComponent(subLink);
   const redirectUrl = "https://laenfaer-redirect.vercel.app/r?url=" + encodeURIComponent(happUrl);
   const kb = new InlineKeyboard2().url("\u{1F916} HappProxy", redirectUrl).row().text("\u{1F519} \u041D\u0430\u0437\u0430\u0434", "connect_back");
@@ -56856,7 +56856,7 @@ userBot.callbackQuery("connect_android", async (ctx) => {
 });
 userBot.callbackQuery("connect_iphone", async (ctx) => {
   const userId = String(ctx.from.id);
-  const subLink = "https://vpn2-bot-q6bz.onrender.com/sub/" + userId;
+  const subLink = "https://vpn2-bot-tcg2.onrender.com/sub/" + userId;
   const happUrl = "happ://add/" + encodeURIComponent(subLink);
   const redirectUrl = "https://laenfaer-redirect.vercel.app/r?url=" + encodeURIComponent(happUrl);
   const kb = new InlineKeyboard2().url("\u{1F4F1} Happ iOS", redirectUrl).row().text("\u{1F519} \u041D\u0430\u0437\u0430\u0434", "connect_back");
