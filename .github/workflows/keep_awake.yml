@@ -1,0 +1,15 @@
+name: Keep bot awake
+
+on:
+  schedule:
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        run: |
+          curl -I https://vpn2-bot-q6bz.onrender.com/api/healthz
+        
